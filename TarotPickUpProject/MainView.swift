@@ -8,14 +8,50 @@
 import SwiftUI
 
 struct MainView: View {
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            horScrollCard
+            //verScrollCard
         }
         .padding()
+    }
+    
+    var horScrollCard: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(0..<5, id: \.self) { index in
+                    getCard(index)
+                        .aspectRatio(2/3, contentMode: .fit)
+
+                }
+            }
+
+        }
+
+    }
+    var verScrollCard: some View {
+        ScrollView(.vertical, showsIndicators: false) {
+            ForEach(0..<77, id: \.self) { index in
+                getCard(index)
+            }
+        }
+    }
+    
+    func getCard(_ index: Int) -> some View {
+        VStack {
+            
+            Image(index < 10 ? "00\(index)" : "0\(index)")
+                .resizable()
+                .padding(.horizontal, 4)
+                .padding(.vertical, 4)
+
+        }
+        .background(
+            RoundedRectangle(cornerRadius: 16)
+                .fill(Color.white)
+                .shadow(radius: 2)
+        )
     }
 }
 
