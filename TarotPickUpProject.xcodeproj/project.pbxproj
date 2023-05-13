@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845EB1DA2A0F2E57004ADBFC /* CardGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845EB1D92A0F2E57004ADBFC /* CardGame.swift */; };
 		84EE3E162A0E23C100F0658D /* TarotPickUpProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE3E152A0E23C100F0658D /* TarotPickUpProjectApp.swift */; };
 		84EE3E182A0E23C100F0658D /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE3E172A0E23C100F0658D /* MainView.swift */; };
 		84EE3E1A2A0E23C400F0658D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EE3E192A0E23C400F0658D /* Assets.xcassets */; };
@@ -71,6 +72,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		845EB1D92A0F2E57004ADBFC /* CardGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardGame.swift; sourceTree = "<group>"; };
 		84EE3E122A0E23C100F0658D /* TarotPickUpProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TarotPickUpProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EE3E152A0E23C100F0658D /* TarotPickUpProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TarotPickUpProjectApp.swift; sourceTree = "<group>"; };
 		84EE3E172A0E23C100F0658D /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				84EE3E232A0E3B7F00F0658D /* Utilities */,
 				84EE3E152A0E23C100F0658D /* TarotPickUpProjectApp.swift */,
 				84EE3E172A0E23C100F0658D /* MainView.swift */,
+				845EB1D92A0F2E57004ADBFC /* CardGame.swift */,
 				84EE3E192A0E23C400F0658D /* Assets.xcassets */,
 				84EE3E1B2A0E23C400F0658D /* Preview Content */,
 			);
@@ -459,6 +462,7 @@
 				84EE3E992A0E3B7F00F0658D /* AppData.swift in Sources */,
 				84EE3E8F2A0E3B7F00F0658D /* MarqueeText.swift in Sources */,
 				84EE3E8D2A0E3B7F00F0658D /* Load_Image_From_URL.swift in Sources */,
+				845EB1DA2A0F2E57004ADBFC /* CardGame.swift in Sources */,
 				84EE3E812A0E3B7F00F0658D /* FAQs_WebView.swift in Sources */,
 				84EE3E7C2A0E3B7F00F0658D /* YoutubeScreen.swift in Sources */,
 				84EE3E872A0E3B7F00F0658D /* TwoTextFieldDialog.swift in Sources */,

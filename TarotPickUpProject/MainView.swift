@@ -8,7 +8,13 @@
 import SwiftUI
 
 struct MainView: View {
-    
+    let cards = [
+        Card(suit: Suit.Main, main: MainCard.Death_XIII),
+        Card(suit: Suit.Main, main: MainCard.TheMoon_XVIII),
+        Card(suit: Suit.Main, main: MainCard.TheSun_XIX),
+        Card(rank: Rank.Ace, suit: Suit.Cup),
+
+    ]
     var body: some View {
         VStack {
             horScrollCard
@@ -20,8 +26,8 @@ struct MainView: View {
     var horScrollCard: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(0..<5, id: \.self) { index in
-                    getCard(index)
+                ForEach(0..<cards.count, id: \.self) { index in
+                    getCard(cards[index])
                         .aspectRatio(2/3, contentMode: .fit)
 
                 }
@@ -32,16 +38,16 @@ struct MainView: View {
     }
     var verScrollCard: some View {
         ScrollView(.vertical, showsIndicators: false) {
-            ForEach(0..<77, id: \.self) { index in
-                getCard(index)
+            ForEach(0..<cards.count, id: \.self) { index in
+                getCard(cards[index])
             }
         }
     }
     
-    func getCard(_ index: Int) -> some View {
+    func getCard(_ card: Card) -> some View {
         VStack {
             
-            Image(index < 10 ? "00\(index)" : "0\(index)")
+            Image(card.filename)
                 .resizable()
                 .padding(.horizontal, 4)
                 .padding(.vertical, 4)
